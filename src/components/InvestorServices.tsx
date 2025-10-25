@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Phone, Clock, DollarSign, FileText, CheckCircle, ArrowRight, Upload, Download, Eye, Trash2, Plus, Send } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { X, Phone, Clock, DollarSign, FileText, CheckCircle, ArrowRight, Upload, Eye, Trash2, Plus, Send } from 'lucide-react';
 import { InvestorService, investorServices } from '../data/mockData';
 
 interface Document {

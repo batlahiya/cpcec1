@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { X, MapPin, Clock, DollarSign, Zap, Shield, Navigation, Star, Wifi, Car, ExternalLink } from 'lucide-react';
+import { X, MapPin, Clock, DollarSign, Zap, Shield, Navigation, Star, Wifi, Car } from 'lucide-react';
 import { ParkingSlot } from '../types';
 import CustomDirectionsMap from './CustomDirectionsMap';
 

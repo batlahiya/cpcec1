@@ -2,8 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, MapPin, Sparkles, Zap, Brain, Rocket, Clock, ShoppingCart } from 'lucide-react';
 import { ChatMessage } from '../types';
-import { quickSuggestions, mockParkingLocations, popularDestinations, mockProducts, investorServices, weatherSuggestions, smartSuggestions } from '../data/mockData';
-import { getConversationFlow, getNextStep, ConversationStep } from '../data/conversationFlows';
+import { quickSuggestions, mockParkingLocations, popularDestinations, weatherSuggestions, smartSuggestions } from '../data/mockData';
 import ParkingMap from './ParkingMap';
 import TypingIndicator from './TypingIndicator';
 import ReservationBooking from './ReservationBooking';
@@ -38,8 +37,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   const [showShoppingCart, setShowShoppingCart] = useState(false);
   const [showWeatherInfo, setShowWeatherInfo] = useState(false);
   const [cartItems, setCartItems] = useState<Array<{product: any, quantity: number}>>([]);
-  const [currentConversationFlow, setCurrentConversationFlow] = useState<string | null>(null);
-  const [currentStepId, setCurrentStepId] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {

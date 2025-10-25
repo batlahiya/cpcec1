@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Sun, Cloud, CloudRain, CloudSnow, Wind, Droplets, Eye, Thermometer, Gauge, Compass, Sunrise, Sunset, Umbrella, Glasses, Car, Plane, MapPin } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { X, Sun, Cloud, CloudRain, CloudSnow, Wind, Droplets, Eye, Gauge, Sunrise, MapPin, Glasses, Umbrella, Car, Plane } from 'lucide-react';
 
 interface WeatherInfoProps {
   onClose: () => void;
@@ -74,17 +74,6 @@ const WeatherInfo: React.FC<WeatherInfoProps> = ({ onClose }) => {
     fetchWeatherData();
   }, []);
 
-  const getWeatherIcon = (condition: string) => {
-    switch (condition.toLowerCase()) {
-      case 'sunny': return <Sun className="w-8 h-8 text-yellow-400" />;
-      case 'partly cloudy': return <Cloud className="w-8 h-8 text-gray-400" />;
-      case 'cloudy': return <Cloud className="w-8 h-8 text-gray-500" />;
-      case 'rainy': return <CloudRain className="w-8 h-8 text-blue-400" />;
-      case 'snowy': return <CloudSnow className="w-8 h-8 text-blue-200" />;
-      case 'hot': return <Sun className="w-8 h-8 text-red-400" />;
-      default: return <Sun className="w-8 h-8 text-yellow-400" />;
-    }
-  };
 
   const getAlertColor = (type: string) => {
     switch (type) {

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, CheckCircle, Calendar, Clock, Users, MapPin, Phone, Star, DollarSign, Zap, Wifi, Car, Utensils, Hotel, Sparkles, Mic, Gamepad, Heart, Share2, Navigation, ExternalLink, ArrowRight, ChevronRight } from 'lucide-react';
+import { X, CheckCircle, Calendar, Clock, MapPin, Phone, Star, DollarSign, Zap, Wifi, Utensils, Hotel, Sparkles, Mic, Gamepad, Heart, Share2, ArrowRight, ChevronRight } from 'lucide-react';
 import { mockVenues, Venue } from '../data/mockData';
 
 interface ReservationBookingProps {
@@ -107,9 +107,6 @@ const ReservationBooking: React.FC<ReservationBookingProps> = ({ onClose }) => {
     setSelectedTime(time);
   };
 
-  const handleNext = () => {
-    if (step < 4) setStep(step + 1);
-  };
 
   const handleBack = () => {
     if (step > 1) {

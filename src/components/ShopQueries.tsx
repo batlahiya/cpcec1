@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Star, ShoppingCart, Heart, Share2, Plus, Minus, Search, Filter, SortAsc, Eye, ExternalLink } from 'lucide-react';
+import { X, Star, ShoppingCart, Heart, Share2, Plus, Minus, Search, Filter, Eye } from 'lucide-react';
 import { mockProducts } from '../data/mockData';
 import { Product } from '../types';
 
