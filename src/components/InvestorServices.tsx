@@ -296,22 +296,6 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
 
           {/* Document Upload Content */}
           <div className="p-6 space-y-6">
-            {/* Required Documents */}
-            <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50">
-              <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
-                <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                Required Documents
-              </h3>
-              <div className="space-y-2">
-                {selectedService && (selectedService as any).requirements && (selectedService as any).requirements.map((requirement: string, index: number) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                    <span className="text-gray-300">{requirement}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* File Upload Area */}
             <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700/50">
               <h3 className="text-lg font-semibold text-white mb-4">Upload Documents</h3>
@@ -334,6 +318,22 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
                   <span>Choose Files</span>
                 </label>
                 <p className="text-xs text-gray-500 mt-2">Supported formats: PDF, DOC, DOCX, JPG, PNG (Max 10MB each)</p>
+              </div>
+            </div>
+
+            {/* Required Documents */}
+            <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50">
+              <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
+                <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
+                Required Documents
+              </h3>
+              <div className="space-y-2">
+                {selectedService && (selectedService as any).requirements && (selectedService as any).requirements.map((requirement: string, index: number) => (
+                  <div key={index} className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                    <span className="text-gray-300">{requirement}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
