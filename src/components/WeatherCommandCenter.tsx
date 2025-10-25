@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, Sun, Cloud, CloudRain, CloudSnow, Wind, Droplets, Eye, Gauge, Compass, Sunrise, Sunset, Umbrella, Glasses, Car, Plane, MapPin, Satellite, Zap, AlertTriangle, Activity, Thermometer } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { X, Wind, Droplets, Eye, Gauge, Sunrise, MapPin, Satellite, Zap, AlertTriangle, Activity } from 'lucide-react';
 
 interface WeatherCommandCenterProps {
   onClose: () => void;
@@ -48,7 +48,6 @@ const WeatherCommandCenter: React.FC<WeatherCommandCenterProps> = ({ onClose }) 
   const [loading, setLoading] = useState(true);
   const [selectedDay, setSelectedDay] = useState(0);
   const [viewMode, setViewMode] = useState<'overview' | 'satellite' | 'radar' | 'forecast'>('overview');
-  const [alerts, setAlerts] = useState(true);
   const [autoRefresh, setAutoRefresh] = useState(true);
 
   useEffect(() => {

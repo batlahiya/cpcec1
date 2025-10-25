@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Zap, Star, Clock, MapPin, Car, Shield, Trophy, Target, AlertTriangle } from 'lucide-react';
+import { X, Zap, MapPin, Car, Shield, Trophy, Target } from 'lucide-react';
 import { mockParkingLocations } from '../data/mockData';
 import { ParkingLocation, ParkingSlot } from '../types';
 
@@ -9,7 +9,6 @@ interface ParkingGameProps {
 }
 
 const ParkingGame: React.FC<ParkingGameProps> = ({ onClose }) => {
-  const [selectedLocation, setSelectedLocation] = useState<ParkingLocation | null>(null);
   const [selectedSlot, setSelectedSlot] = useState<ParkingSlot | null>(null);
   const [gameMode, setGameMode] = useState<'hunt' | 'reserve' | 'battle'>('hunt');
   const [score, setScore] = useState(0);
@@ -295,7 +294,7 @@ const ParkingGame: React.FC<ParkingGameProps> = ({ onClose }) => {
                           </div>
                         </div>
                         <button
-                          onClick={() => setSelectedLocation(location)}
+                          onClick={() => setSelectedSlot(location.slots[0])}
                           className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
                         >
                           View All

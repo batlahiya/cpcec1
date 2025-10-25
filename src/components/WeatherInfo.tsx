@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { X, Sun, Cloud, CloudRain, CloudSnow, Wind, Droplets, Eye, Gauge, Sunrise, MapPin, Glasses, Umbrella, Car, Plane } from 'lucide-react';
+import { X, Sun, Wind, Droplets, Eye, Gauge, Sunrise, MapPin, Glasses, Umbrella, Car, Plane } from 'lucide-react';
 
 interface WeatherInfoProps {
   onClose: () => void;

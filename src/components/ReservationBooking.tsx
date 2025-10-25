@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, CheckCircle, Calendar, Clock, MapPin, Phone, Star, DollarSign, Zap, Wifi, Utensils, Hotel, Sparkles, Mic, Gamepad, Heart, Share2, ArrowRight, ChevronRight } from 'lucide-react';
+import { X, CheckCircle, Calendar, Clock, MapPin, Phone, Star, Zap, Wifi, Utensils, Hotel, Sparkles, Mic, Gamepad, Heart, Share2, ArrowRight, ChevronRight } from 'lucide-react';
 import { mockVenues, Venue } from '../data/mockData';
 
 interface ReservationBookingProps {

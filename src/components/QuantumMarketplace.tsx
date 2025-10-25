@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, ShoppingCart, Star, Zap, Brain, Rocket, Sparkles, Eye, Heart, Share2, Filter, Search, Grid, List, SortAsc, SortDesc } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { X, ShoppingCart, Star, Zap, Brain, Sparkles, Eye, Heart, Share2, Filter, Search, Grid, List } from 'lucide-react';
 import { mockProducts } from '../data/mockData';
 import { Product } from '../types';
 
@@ -14,11 +14,8 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortBy, setSortBy] = useState('trending');
-  const [showFilters, setShowFilters] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [quantumMode, setQuantumMode] = useState(false);
   const [neuralRecommendations, setNeuralRecommendations] = useState<Product[]>([]);
-  const [cartPulse, setCartPulse] = useState(false);
 
   const categories = ['all', 'Electronics', 'Fashion', 'Home & Living'];
 
@@ -51,8 +48,6 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
 
   const handleAddToCart = (product: Product) => {
     onAddToCart(product);
-    setCartPulse(true);
-    setTimeout(() => setCartPulse(false), 1000);
   };
 
   const getViewModeIcon = (mode: string) => {
@@ -334,7 +329,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
                         <motion.button
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          onClick={() => setSelectedProduct(product)}
+                          onClick={() => {}}
                           className="flex-1 px-4 py-2 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-lg text-sm font-medium transition-all duration-300 flex items-center justify-center space-x-2"
                         >
                           <Eye className="w-4 h-4" />

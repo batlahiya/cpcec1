@@ -29,7 +29,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [showParkingMap, setShowParkingMap] = useState(false);
-  const [selectedDestination, setSelectedDestination] = useState('');
   const [showReservationBooking, setShowReservationBooking] = useState(false);
   const [showShopQueries, setShowShopQueries] = useState(false);
   const [showDeveloperServices, setShowDeveloperServices] = useState(false);
@@ -222,7 +221,6 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   };
 
   const handleDestinationSelect = (destination: string) => {
-    setSelectedDestination(destination);
     handleSendMessage(`Find parking near ${destination}`);
   };
 
