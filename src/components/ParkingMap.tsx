@@ -374,7 +374,7 @@ const ParkingMap: React.FC<ParkingMapProps> = ({ locations, onClose }) => {
                       </div>
                       {slot.price && (
                         <p className="text-sm text-gray-600 mb-2">
-                          ${slot.price}/hour
+                          LKR {slot.price}/hour
                         </p>
                       )}
                       {slot.amenities && slot.amenities.length > 0 && (

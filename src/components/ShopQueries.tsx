@@ -13,7 +13,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortBy, setSortBy] = useState('name');
-  const [priceRange, setPriceRange] = useState([0, 2000]);
+  const [priceRange, setPriceRange] = useState([0, 10000]);
   const [inStockOnly, setInStockOnly] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState(1);
@@ -163,7 +163,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
               <input
                 type="range"
                 min="0"
-                max="2000"
+                max="10000"
                 value={priceRange[0]}
                 onChange={(e) => setPriceRange([parseInt(e.target.value), priceRange[1]])}
                 className="flex-1 h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer slider"
@@ -171,7 +171,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
               <input
                 type="range"
                 min="0"
-                max="2000"
+                max="10000"
                 value={priceRange[1]}
                 onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
                 className="flex-1 h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer slider"
@@ -238,7 +238,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
                   <p className="text-gray-400 text-sm mb-3 line-clamp-2">{product.description}</p>
 
                   <div className="flex items-center justify-between mb-4">
-                    <div className="text-2xl font-bold text-orange-400">${product.price}</div>
+                    <div className="text-2xl font-bold text-orange-400">LKR {product.price}</div>
                     <div className="text-sm text-gray-400">by {product.vendor}</div>
                   </div>
 
@@ -341,7 +341,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
 
                     <div>
                       <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-6">
-                        <div className="text-4xl font-bold text-orange-400 mb-6">${selectedProduct.price}</div>
+                        <div className="text-4xl font-bold text-orange-400 mb-6">LKR {selectedProduct.price}</div>
                         
                         <div className="space-y-4">
                           <div>
@@ -372,7 +372,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
                               className="w-full px-6 py-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-medium transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                             >
                               <ShoppingCart className="w-5 h-5" />
-                              <span>Add to Cart (${(selectedProduct.price * quantity).toFixed(2)})</span>
+                              <span>Add to Cart (LKR {(selectedProduct.price * quantity).toFixed(2)})</span>
                             </motion.button>
                             
                             <button className="w-full px-6 py-4 bg-gray-700/50 hover:bg-gray-600/50 text-white rounded-xl font-medium transition-all duration-300 flex items-center justify-center space-x-2">

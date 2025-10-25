@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { X, MapPin, Clock, DollarSign, Zap, Shield, Navigation, Star, Wifi, Car } from 'lucide-react';
+import { X, MapPin, Clock, Banknote, Zap, Shield, Navigation, Star, Wifi, Car } from 'lucide-react';
 import { ParkingSlot } from '../types';
 import CustomDirectionsMap from './CustomDirectionsMap';
 
@@ -142,11 +142,11 @@ const ParkingSlotDetails: React.FC<ParkingSlotDetailsProps> = ({
           {slot.price && (
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-gray-600 flex items-center">
-                <DollarSign className="w-4 h-4 mr-1" />
+                <Banknote className="w-4 h-4 mr-1" />
                 Hourly Rate
               </span>
               <span className="text-lg font-semibold text-gray-800">
-                ${slot.price}/hour
+                LKR {slot.price}/hour
               </span>
             </div>
           )}

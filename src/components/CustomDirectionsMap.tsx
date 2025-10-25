@@ -144,7 +144,7 @@ const CustomDirectionsMap: React.FC<CustomDirectionsMapProps> = ({ slot, userLoc
                 <p className="text-sm text-gray-600">Your destination</p>
                 <div className="mt-2 space-y-1">
                   <p className="text-xs">Type: {slot.type === 'electric' ? 'Electric' : slot.type === 'handicap' ? 'Handicap' : 'Standard'}</p>
-                  <p className="text-xs">Price: ${slot.price}/hour</p>
+                  <p className="text-xs">Price: LKR {slot.price}/hour</p>
                   {slot.amenities && slot.amenities.length > 0 && (
                     <p className="text-xs">Amenities: {slot.amenities.join(', ')}</p>
                   )}

@@ -369,7 +369,7 @@ const ParkingGame: React.FC<ParkingGameProps> = ({ onClose }) => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-400">Price:</span>
-                      <span className="text-green-400 font-bold">${selectedSlot.price}/hour</span>
+                      <span className="text-green-400 font-bold">LKR {selectedSlot.price}/hour</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-400">Type:</span>

@@ -157,14 +157,12 @@ const ReservationBooking: React.FC<ReservationBookingProps> = ({ onClose }) => {
   };
 
   const getPriceRangeColor = (priceRange: string) => {
-    switch (priceRange) {
-      case '$': return 'text-green-400';
-      case '$$': return 'text-yellow-400';
-      case '$$$': return 'text-orange-400';
-      case '$$$$': return 'text-red-400';
-      case '$$$$$': return 'text-purple-400';
-      default: return 'text-gray-400';
-    }
+    if (priceRange.includes('LKR 20,000+')) return 'text-purple-400';
+    if (priceRange.includes('LKR 10,000+')) return 'text-red-400';
+    if (priceRange.includes('LKR 4,000-10,000')) return 'text-orange-400';
+    if (priceRange.includes('LKR 1,500-4,000')) return 'text-yellow-400';
+    if (priceRange.includes('LKR') && priceRange.includes('1,000')) return 'text-green-400';
+    return 'text-gray-400';
   };
 
   return (

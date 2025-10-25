@@ -74,7 +74,7 @@ const DirectionsMap: React.FC<DirectionsMapProps> = ({ slot, userLocation, onClo
           </button>
         </div>
         <p className="text-sm text-gray-600 mt-1">
-          {slot.distance} meters away • {slot.price ? `$${slot.price}/hour` : 'Free'}
+          {slot.distance} meters away • {slot.price ? `LKR ${slot.price}/hour` : 'Free'}
         </p>
       </div>
 

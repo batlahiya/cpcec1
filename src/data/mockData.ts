@@ -9,50 +9,50 @@ export const mockParkingLocations: ParkingLocation[] = [
     availableSlots: 89,
     slots: [
       // Row A - Electric Vehicle Row (North) - 8 slots
-      { id: 'A1', position: [6.93630, 79.83520], status: 'available', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 5 },
-      { id: 'A2', position: [6.93640, 79.83520], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 8 },
-      { id: 'A3', position: [6.93650, 79.83520], status: 'available', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 11 },
-      { id: 'A4', position: [6.93660, 79.83520], status: 'reserved', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 14 },
-      { id: 'A5', position: [6.93670, 79.83520], status: 'available', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 17 },
-      { id: 'A6', position: [6.93680, 79.83520], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 20 },
-      { id: 'A7', position: [6.93690, 79.83520], status: 'available', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 23 },
-      { id: 'A8', position: [6.93700, 79.83520], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 26 },
+      { id: 'A1', position: [6.93630, 79.83520], status: 'available', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 5 },
+      { id: 'A2', position: [6.93640, 79.83520], status: 'occupied', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 8 },
+      { id: 'A3', position: [6.93650, 79.83520], status: 'available', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 11 },
+      { id: 'A4', position: [6.93660, 79.83520], status: 'reserved', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 14 },
+      { id: 'A5', position: [6.93670, 79.83520], status: 'available', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 17 },
+      { id: 'A6', position: [6.93680, 79.83520], status: 'occupied', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 20 },
+      { id: 'A7', position: [6.93690, 79.83520], status: 'available', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 23 },
+      { id: 'A8', position: [6.93700, 79.83520], status: 'occupied', price: 700, amenities: ['EV Charging', 'Premium'], type: 'electric', distance: 26 },
       
       // Row B - Standard Parking (North-Center) - 8 slots
-      { id: 'B1', position: [6.93630, 79.83510], status: 'available', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 30 },
-      { id: 'B2', position: [6.93640, 79.83510], status: 'occupied', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 33 },
-      { id: 'B3', position: [6.93650, 79.83510], status: 'available', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 36 },
-      { id: 'B4', position: [6.93660, 79.83510], status: 'occupied', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 39 },
-      { id: 'B5', position: [6.93670, 79.83510], status: 'available', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 42 },
-      { id: 'B6', position: [6.93680, 79.83510], status: 'occupied', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 45 },
-      { id: 'B7', position: [6.93690, 79.83510], status: 'available', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 48 },
-      { id: 'B8', position: [6.93700, 79.83510], status: 'occupied', price: 2.5, amenities: ['Covered'], type: 'standard', distance: 51 },
+      { id: 'B1', position: [6.93630, 79.83510], status: 'available', price: 500, amenities: ['Covered'], type: 'standard', distance: 30 },
+      { id: 'B2', position: [6.93640, 79.83510], status: 'occupied', price: 500, amenities: ['Covered'], type: 'standard', distance: 33 },
+      { id: 'B3', position: [6.93650, 79.83510], status: 'available', price: 500, amenities: ['Covered'], type: 'standard', distance: 36 },
+      { id: 'B4', position: [6.93660, 79.83510], status: 'occupied', price: 500, amenities: ['Covered'], type: 'standard', distance: 39 },
+      { id: 'B5', position: [6.93670, 79.83510], status: 'available', price: 500, amenities: ['Covered'], type: 'standard', distance: 42 },
+      { id: 'B6', position: [6.93680, 79.83510], status: 'occupied', price: 500, amenities: ['Covered'], type: 'standard', distance: 45 },
+      { id: 'B7', position: [6.93690, 79.83510], status: 'available', price: 500, amenities: ['Covered'], type: 'standard', distance: 48 },
+      { id: 'B8', position: [6.93700, 79.83510], status: 'occupied', price: 500, amenities: ['Covered'], type: 'standard', distance: 51 },
       
       // Row C - Standard Parking (Center) - 8 slots
-      { id: 'C1', position: [6.93630, 79.83500], status: 'available', price: 2.0, type: 'standard', distance: 55 },
-      { id: 'C2', position: [6.93640, 79.83500], status: 'occupied', price: 2.0, type: 'standard', distance: 58 },
-      { id: 'C3', position: [6.93650, 79.83500], status: 'available', price: 2.0, type: 'standard', distance: 61 },
-      { id: 'C4', position: [6.93660, 79.83500], status: 'occupied', price: 2.0, type: 'standard', distance: 64 },
-      { id: 'C5', position: [6.93670, 79.83500], status: 'available', price: 2.0, type: 'standard', distance: 67 },
-      { id: 'C6', position: [6.93680, 79.83500], status: 'occupied', price: 2.0, type: 'standard', distance: 70 },
-      { id: 'C7', position: [6.93690, 79.83500], status: 'available', price: 2.0, type: 'standard', distance: 73 },
-      { id: 'C8', position: [6.93700, 79.83500], status: 'occupied', price: 2.0, type: 'standard', distance: 76 },
+      { id: 'C1', position: [6.93630, 79.83500], status: 'available', price: 400, type: 'standard', distance: 55 },
+      { id: 'C2', position: [6.93640, 79.83500], status: 'occupied', price: 400, type: 'standard', distance: 58 },
+      { id: 'C3', position: [6.93650, 79.83500], status: 'available', price: 400, type: 'standard', distance: 61 },
+      { id: 'C4', position: [6.93660, 79.83500], status: 'occupied', price: 400, type: 'standard', distance: 64 },
+      { id: 'C5', position: [6.93670, 79.83500], status: 'available', price: 400, type: 'standard', distance: 67 },
+      { id: 'C6', position: [6.93680, 79.83500], status: 'occupied', price: 400, type: 'standard', distance: 70 },
+      { id: 'C7', position: [6.93690, 79.83500], status: 'available', price: 400, type: 'standard', distance: 73 },
+      { id: 'C8', position: [6.93700, 79.83500], status: 'occupied', price: 400, type: 'standard', distance: 76 },
       
       // Row D - Handicap Accessible (South-Center) - 6 slots
-      { id: 'D1', position: [6.93630, 79.83490], status: 'available', price: 1.0, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 80 },
-      { id: 'D2', position: [6.93640, 79.83490], status: 'occupied', price: 1.0, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 83 },
-      { id: 'D3', position: [6.93650, 79.83490], status: 'available', price: 1.0, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 86 },
-      { id: 'D4', position: [6.93660, 79.83490], status: 'occupied', price: 1.0, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 89 },
-      { id: 'D5', position: [6.93670, 79.83490], status: 'available', price: 1.0, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 92 },
-      { id: 'D6', position: [6.93680, 79.83490], status: 'occupied', price: 1.0, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 95 },
+      { id: 'D1', position: [6.93630, 79.83490], status: 'available', price: 200, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 80 },
+      { id: 'D2', position: [6.93640, 79.83490], status: 'occupied', price: 200, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 83 },
+      { id: 'D3', position: [6.93650, 79.83490], status: 'available', price: 200, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 86 },
+      { id: 'D4', position: [6.93660, 79.83490], status: 'occupied', price: 200, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 89 },
+      { id: 'D5', position: [6.93670, 79.83490], status: 'available', price: 200, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 92 },
+      { id: 'D6', position: [6.93680, 79.83490], status: 'occupied', price: 200, amenities: ['Handicap Accessible', 'Wide Space'], type: 'handicap', distance: 95 },
       
       // Row E - Premium Parking (South) - 6 slots
-      { id: 'E1', position: [6.93630, 79.83480], status: 'available', price: 4.0, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 100 },
-      { id: 'E2', position: [6.93640, 79.83480], status: 'occupied', price: 4.0, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 103 },
-      { id: 'E3', position: [6.93650, 79.83480], status: 'available', price: 4.0, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 106 },
-      { id: 'E4', position: [6.93660, 79.83480], status: 'reserved', price: 4.0, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 109 },
-      { id: 'E5', position: [6.93670, 79.83480], status: 'available', price: 4.0, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 112 },
-      { id: 'E6', position: [6.93680, 79.83480], status: 'occupied', price: 4.0, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 115 },
+      { id: 'E1', position: [6.93630, 79.83480], status: 'available', price: 800, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 100 },
+      { id: 'E2', position: [6.93640, 79.83480], status: 'occupied', price: 800, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 103 },
+      { id: 'E3', position: [6.93650, 79.83480], status: 'available', price: 800, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 106 },
+      { id: 'E4', position: [6.93660, 79.83480], status: 'reserved', price: 800, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 109 },
+      { id: 'E5', position: [6.93670, 79.83480], status: 'available', price: 800, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 112 },
+      { id: 'E6', position: [6.93680, 79.83480], status: 'occupied', price: 800, amenities: ['Valet Service', 'Premium', 'Covered'], type: 'standard', distance: 115 },
     ]
   },
   {
@@ -63,34 +63,34 @@ export const mockParkingLocations: ParkingLocation[] = [
     availableSlots: 67,
     slots: [
       // Row F - Harbour View Electric Row - 8 slots
-      { id: 'F1', position: [6.94020, 79.82940], status: 'available', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 120 },
-      { id: 'F2', position: [6.94030, 79.82940], status: 'occupied', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 123 },
-      { id: 'F3', position: [6.94040, 79.82940], status: 'available', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 126 },
-      { id: 'F4', position: [6.94050, 79.82940], status: 'occupied', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 129 },
-      { id: 'F5', position: [6.94060, 79.82940], status: 'available', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 132 },
-      { id: 'F6', position: [6.94070, 79.82940], status: 'occupied', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 135 },
-      { id: 'F7', position: [6.94080, 79.82940], status: 'available', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 138 },
-      { id: 'F8', position: [6.94090, 79.82940], status: 'occupied', price: 4.0, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 141 },
+      { id: 'F1', position: [6.94020, 79.82940], status: 'available', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 120 },
+      { id: 'F2', position: [6.94030, 79.82940], status: 'occupied', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 123 },
+      { id: 'F3', position: [6.94040, 79.82940], status: 'available', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 126 },
+      { id: 'F4', position: [6.94050, 79.82940], status: 'occupied', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 129 },
+      { id: 'F5', position: [6.94060, 79.82940], status: 'available', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 132 },
+      { id: 'F6', position: [6.94070, 79.82940], status: 'occupied', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 135 },
+      { id: 'F7', position: [6.94080, 79.82940], status: 'available', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 138 },
+      { id: 'F8', position: [6.94090, 79.82940], status: 'occupied', price: 800, amenities: ['EV Charging', 'Harbour View', 'Premium'], type: 'electric', distance: 141 },
       
       // Row G - Harbour View Standard - 8 slots
-      { id: 'G1', position: [6.94020, 79.82930], status: 'available', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 145 },
-      { id: 'G2', position: [6.94030, 79.82930], status: 'occupied', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 148 },
-      { id: 'G3', position: [6.94040, 79.82930], status: 'available', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 151 },
-      { id: 'G4', position: [6.94050, 79.82930], status: 'occupied', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 154 },
-      { id: 'G5', position: [6.94060, 79.82930], status: 'available', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 157 },
-      { id: 'G6', position: [6.94070, 79.82930], status: 'occupied', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 160 },
-      { id: 'G7', position: [6.94080, 79.82930], status: 'available', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 163 },
-      { id: 'G8', position: [6.94090, 79.82930], status: 'occupied', price: 3.0, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 166 },
+      { id: 'G1', position: [6.94020, 79.82930], status: 'available', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 145 },
+      { id: 'G2', position: [6.94030, 79.82930], status: 'occupied', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 148 },
+      { id: 'G3', position: [6.94040, 79.82930], status: 'available', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 151 },
+      { id: 'G4', position: [6.94050, 79.82930], status: 'occupied', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 154 },
+      { id: 'G5', position: [6.94060, 79.82930], status: 'available', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 157 },
+      { id: 'G6', position: [6.94070, 79.82930], status: 'occupied', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 160 },
+      { id: 'G7', position: [6.94080, 79.82930], status: 'available', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 163 },
+      { id: 'G8', position: [6.94090, 79.82930], status: 'occupied', price: 600, amenities: ['Harbour View', 'Covered'], type: 'standard', distance: 166 },
       
       // Row H - Harbour View Standard - 8 slots
-      { id: 'H1', position: [6.94020, 79.82920], status: 'available', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 170 },
-      { id: 'H2', position: [6.94030, 79.82920], status: 'occupied', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 173 },
-      { id: 'H3', position: [6.94040, 79.82920], status: 'available', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 176 },
-      { id: 'H4', position: [6.94050, 79.82920], status: 'occupied', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 179 },
-      { id: 'H5', position: [6.94060, 79.82920], status: 'available', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 182 },
-      { id: 'H6', position: [6.94070, 79.82920], status: 'occupied', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 185 },
-      { id: 'H7', position: [6.94080, 79.82920], status: 'available', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 188 },
-      { id: 'H8', position: [6.94090, 79.82920], status: 'occupied', price: 2.5, amenities: ['Harbour View'], type: 'standard', distance: 191 },
+      { id: 'H1', position: [6.94020, 79.82920], status: 'available', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 170 },
+      { id: 'H2', position: [6.94030, 79.82920], status: 'occupied', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 173 },
+      { id: 'H3', position: [6.94040, 79.82920], status: 'available', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 176 },
+      { id: 'H4', position: [6.94050, 79.82920], status: 'occupied', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 179 },
+      { id: 'H5', position: [6.94060, 79.82920], status: 'available', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 182 },
+      { id: 'H6', position: [6.94070, 79.82920], status: 'occupied', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 185 },
+      { id: 'H7', position: [6.94080, 79.82920], status: 'available', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 188 },
+      { id: 'H8', position: [6.94090, 79.82920], status: 'occupied', price: 500, amenities: ['Harbour View'], type: 'standard', distance: 191 },
     ]
   },
   {
@@ -101,34 +101,34 @@ export const mockParkingLocations: ParkingLocation[] = [
     availableSlots: 78,
     slots: [
       // Row I - Business District Electric - 8 slots
-      { id: 'I1', position: [6.93170, 79.83960], status: 'available', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 200 },
-      { id: 'I2', position: [6.93180, 79.83960], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 203 },
-      { id: 'I3', position: [6.93190, 79.83960], status: 'available', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 206 },
-      { id: 'I4', position: [6.93200, 79.83960], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 209 },
-      { id: 'I5', position: [6.93210, 79.83960], status: 'available', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 212 },
-      { id: 'I6', position: [6.93220, 79.83960], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 215 },
-      { id: 'I7', position: [6.93230, 79.83960], status: 'available', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 218 },
-      { id: 'I8', position: [6.93240, 79.83960], status: 'occupied', price: 3.5, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 221 },
+      { id: 'I1', position: [6.93170, 79.83960], status: 'available', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 200 },
+      { id: 'I2', position: [6.93180, 79.83960], status: 'occupied', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 203 },
+      { id: 'I3', position: [6.93190, 79.83960], status: 'available', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 206 },
+      { id: 'I4', position: [6.93200, 79.83960], status: 'occupied', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 209 },
+      { id: 'I5', position: [6.93210, 79.83960], status: 'available', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 212 },
+      { id: 'I6', position: [6.93220, 79.83960], status: 'occupied', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 215 },
+      { id: 'I7', position: [6.93230, 79.83960], status: 'available', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 218 },
+      { id: 'I8', position: [6.93240, 79.83960], status: 'occupied', price: 700, amenities: ['EV Charging', 'Business Hours', 'Fast Charging'], type: 'electric', distance: 221 },
       
       // Row J - Business District Standard - 8 slots
-      { id: 'J1', position: [6.93170, 79.83950], status: 'available', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 225 },
-      { id: 'J2', position: [6.93180, 79.83950], status: 'occupied', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 228 },
-      { id: 'J3', position: [6.93190, 79.83950], status: 'available', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 231 },
-      { id: 'J4', position: [6.93200, 79.83950], status: 'occupied', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 234 },
-      { id: 'J5', position: [6.93210, 79.83950], status: 'available', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 237 },
-      { id: 'J6', position: [6.93220, 79.83950], status: 'occupied', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 240 },
-      { id: 'J7', position: [6.93230, 79.83950], status: 'available', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 243 },
-      { id: 'J8', position: [6.93240, 79.83950], status: 'occupied', price: 3.0, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 246 },
+      { id: 'J1', position: [6.93170, 79.83950], status: 'available', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 225 },
+      { id: 'J2', position: [6.93180, 79.83950], status: 'occupied', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 228 },
+      { id: 'J3', position: [6.93190, 79.83950], status: 'available', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 231 },
+      { id: 'J4', position: [6.93200, 79.83950], status: 'occupied', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 234 },
+      { id: 'J5', position: [6.93210, 79.83950], status: 'available', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 237 },
+      { id: 'J6', position: [6.93220, 79.83950], status: 'occupied', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 240 },
+      { id: 'J7', position: [6.93230, 79.83950], status: 'available', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 243 },
+      { id: 'J8', position: [6.93240, 79.83950], status: 'occupied', price: 600, amenities: ['Business Hours', 'Covered'], type: 'standard', distance: 246 },
       
       // Row K - Business District Standard - 8 slots
-      { id: 'K1', position: [6.93170, 79.83940], status: 'available', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 250 },
-      { id: 'K2', position: [6.93180, 79.83940], status: 'occupied', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 253 },
-      { id: 'K3', position: [6.93190, 79.83940], status: 'available', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 256 },
-      { id: 'K4', position: [6.93200, 79.83940], status: 'occupied', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 259 },
-      { id: 'K5', position: [6.93210, 79.83940], status: 'available', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 262 },
-      { id: 'K6', position: [6.93220, 79.83940], status: 'occupied', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 265 },
-      { id: 'K7', position: [6.93230, 79.83940], status: 'available', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 268 },
-      { id: 'K8', position: [6.93240, 79.83940], status: 'occupied', price: 2.5, amenities: ['Business Hours'], type: 'standard', distance: 271 },
+      { id: 'K1', position: [6.93170, 79.83940], status: 'available', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 250 },
+      { id: 'K2', position: [6.93180, 79.83940], status: 'occupied', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 253 },
+      { id: 'K3', position: [6.93190, 79.83940], status: 'available', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 256 },
+      { id: 'K4', position: [6.93200, 79.83940], status: 'occupied', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 259 },
+      { id: 'K5', position: [6.93210, 79.83940], status: 'available', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 262 },
+      { id: 'K6', position: [6.93220, 79.83940], status: 'occupied', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 265 },
+      { id: 'K7', position: [6.93230, 79.83940], status: 'available', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 268 },
+      { id: 'K8', position: [6.93240, 79.83940], status: 'occupied', price: 500, amenities: ['Business Hours'], type: 'standard', distance: 271 },
     ]
   }
 ];
@@ -296,7 +296,7 @@ export const investorServices: InvestorService[] = [
     contact: '+94 11 2345 700',
     requirements: ['Business Registration', 'Tax ID', 'Board Resolution', 'Financial Statements'],
     processingTime: '2-3 business days',
-    fees: 'No setup fee, $50/month maintenance'
+    fees: 'No setup fee, LKR 10,000/month maintenance'
   },
   {
     id: 'inv2',
@@ -331,7 +331,7 @@ export const investorServices: InvestorService[] = [
     contact: '+94 11 2345 703',
     requirements: ['Company Name', 'Business Type', 'Directors Info', 'Registered Address'],
     processingTime: '7-10 business days',
-    fees: '$500 + government fees'
+    fees: 'LKR 100,000 + government fees'
   },
   {
     id: 'inv5',
@@ -342,7 +342,7 @@ export const investorServices: InvestorService[] = [
     contact: '+94 11 2345 704',
     requirements: ['IP Documentation', 'Prior Art Search', 'Application Forms', 'Fees'],
     processingTime: '3-6 months',
-    fees: 'Starting from $200 per application'
+    fees: 'Starting from LKR 40,000 per application'
   },
   
   // Tax Services
@@ -355,7 +355,7 @@ export const investorServices: InvestorService[] = [
     contact: '+94 11 2345 705',
     requirements: ['Financial Records', 'Previous Tax Returns', 'Business Documents'],
     processingTime: '1-2 business days',
-    fees: '$150/hour consultation'
+    fees: 'LKR 30,000/hour consultation'
   },
   
   // Real Estate
@@ -431,7 +431,7 @@ export const mockVenues: Venue[] = [
     category: 'Fine Dining',
     description: 'Experience molecular gastronomy in a zero-gravity inspired setting with panoramic harbor views.',
     rating: 4.9,
-    priceRange: '$$$$',
+    priceRange: 'LKR 10,000+',
     image: '🌌',
     amenities: ['Harbor View', 'Molecular Cuisine', 'Wine Pairing', 'Private Dining'],
     availability: [
@@ -449,7 +449,7 @@ export const mockVenues: Venue[] = [
     category: 'Japanese Fusion',
     description: 'AI-powered sushi preparation with holographic menu displays and interactive dining experiences.',
     rating: 4.7,
-    priceRange: '$$$',
+    priceRange: 'LKR 4,000-10,000',
     image: '🍣',
     amenities: ['AI Chef', 'Holographic Menu', 'Sake Bar', 'Omakase'],
     availability: [
@@ -467,7 +467,7 @@ export const mockVenues: Venue[] = [
     category: 'Fusion',
     description: 'Neon-lit cyberpunk themed café with virtual reality dining experiences and digital art displays.',
     rating: 4.5,
-    priceRange: '$$',
+    priceRange: 'LKR 1,500-4,000',
     image: '🌆',
     amenities: ['VR Dining', 'Neon Ambiance', 'Digital Art', 'Live Music'],
     availability: [
@@ -487,7 +487,7 @@ export const mockVenues: Venue[] = [
     category: 'Luxury',
     description: 'Floating hotel pods with transparent floors, zero-gravity sleeping chambers, and AI concierge services.',
     rating: 4.9,
-    priceRange: '$$$$$',
+    priceRange: 'LKR 20,000+',
     image: '⭐',
     amenities: ['Zero-Gravity Pods', 'AI Concierge', 'Transparent Floors', 'Space Views', 'Floating Pool'],
     availability: [
@@ -505,7 +505,7 @@ export const mockVenues: Venue[] = [
     category: 'Boutique',
     description: 'Futuristic boutique hotel with holographic room service, smart mirrors, and immersive entertainment systems.',
     rating: 4.6,
-    priceRange: '$$$',
+    priceRange: 'LKR 4,000-10,000',
     image: '🌃',
     amenities: ['Holographic Service', 'Smart Mirrors', 'Immersive Entertainment', 'Neon Architecture'],
     availability: [
@@ -525,7 +525,7 @@ export const mockVenues: Venue[] = [
     category: 'Luxury Spa',
     description: 'Advanced biohacking spa with cryotherapy chambers, float tanks, and AI-powered wellness optimization.',
     rating: 4.8,
-    priceRange: '$$$',
+    priceRange: 'LKR 4,000-10,000',
     image: '🧘',
     amenities: ['Cryotherapy', 'Float Tanks', 'AI Wellness', 'Biohacking', 'Meditation Pods'],
     availability: [
@@ -545,7 +545,7 @@ export const mockVenues: Venue[] = [
     category: 'Conference',
     description: 'State-of-the-art conference facility with holographic presentations, AI translation, and virtual reality meeting rooms.',
     rating: 4.7,
-    priceRange: '$$$$',
+    priceRange: 'LKR 10,000+',
     image: '🎭',
     amenities: ['Holographic Presentations', 'AI Translation', 'VR Meeting Rooms', 'Smart Catering'],
     availability: [
@@ -565,7 +565,7 @@ export const mockVenues: Venue[] = [
     category: 'Gaming',
     description: 'Next-generation VR gaming center with full-body motion capture, haptic feedback suits, and multiplayer experiences.',
     rating: 4.6,
-    priceRange: '$$',
+    priceRange: 'LKR 1,500-4,000',
     image: '🎮',
     amenities: ['Full-Body VR', 'Haptic Suits', 'Multiplayer', 'Esports Arena', 'AI Opponents'],
     availability: [

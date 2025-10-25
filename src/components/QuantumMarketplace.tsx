@@ -365,7 +365,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
                     </div>
                     <div className="p-4">
                       <h4 className="text-lg font-bold text-white mb-2">{product.name}</h4>
-                      <div className="text-2xl font-bold text-purple-400 mb-4">${product.price}</div>
+                      <div className="text-2xl font-bold text-purple-400 mb-4">LKR {product.price}</div>
                       <button
                         onClick={() => handleAddToCart(product)}
                         className="w-full px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-medium hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
