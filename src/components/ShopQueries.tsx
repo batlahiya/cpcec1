@@ -92,7 +92,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
               </div>
               <div>
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
-                  Quantum Shopping
+                  Smart Shopping
                 </h2>
                 <p className="text-gray-400">Discover amazing products from Port City</p>
               </div>
@@ -158,7 +158,7 @@ const ShopQueries: React.FC<ShopQueriesProps> = ({ onClose, onAddToCart }) => {
 
           {/* Price Range */}
           <div className="mt-4">
-            <label className="block text-sm text-gray-300 mb-2">Price Range: ${priceRange[0]} - ${priceRange[1]}</label>
+            <label className="block text-sm text-gray-300 mb-2">Price Range: LKR {priceRange[0]} - LKR {priceRange[1]}</label>
             <div className="flex items-center space-x-4">
               <input
                 type="range"

@@ -115,7 +115,7 @@ const ParkingGame: React.FC<ParkingGameProps> = ({ onClose }) => {
               </motion.div>
               <div>
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Quantum Parking Arena
+                  Smart Parking Arena
                 </h2>
                 <p className="text-gray-300">Gamified parking experience with real-time challenges</p>
               </div>

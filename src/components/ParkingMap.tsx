@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { Icon, LatLngTuple } from 'leaflet';
 import { AnimatePresence } from 'framer-motion';
-import { MapPin, Zap, Sparkles } from 'lucide-react';
+import { MapPin, Zap, Sparkles, X } from 'lucide-react';
 import { ParkingLocation, ParkingSlot } from '../types';
 import ParkingSlotDetails from './ParkingSlotDetails';
 import 'leaflet/dist/leaflet.css';
@@ -18,9 +18,10 @@ L.Icon.Default.mergeOptions({
 
 interface ParkingMapProps {
   locations: ParkingLocation[];
+  onClose?: () => void;
 }
 
-const ParkingMap: React.FC<ParkingMapProps> = ({ locations }) => {
+const ParkingMap: React.FC<ParkingMapProps> = ({ locations, onClose }) => {
   const [selectedSlot, setSelectedSlot] = useState<ParkingSlot | null>(null);
   const [showDetails, setShowDetails] = useState(false);
   const [userLocation, setUserLocation] = useState<LatLngTuple | null>(null);
@@ -178,16 +179,24 @@ const ParkingMap: React.FC<ParkingMapProps> = ({ locations }) => {
                         <MapPin className="w-5 h-5 text-white" />
                       </div>
                       <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                        Quantum Parking System
+                        Smart Parking System
                       </span>
                     </h3>
+                    {onClose && (
+                      <button
+                        onClick={onClose}
+                        className="p-2 hover:bg-gray-700/50 rounded-lg transition-colors group"
+                      >
+                        <X className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                      </button>
+                    )}
                     <div className="text-sm text-gray-300 flex items-center px-3 py-2 bg-green-500/20 rounded-lg border border-green-500/30">
                       <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
                       Neural Network Active • {lastUpdate.toLocaleTimeString()}
                     </div>
                   </div>
           
-                  {/* Quantum Parking Statistics */}
+                  {/* Smart Parking Statistics */}
                   <div className="grid grid-cols-3 gap-4 mb-4">
                     <div className="bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl p-4 text-center border border-green-500/30">
                       <div className="text-3xl font-bold text-green-400">{totalAvailable}</div>
@@ -205,7 +214,7 @@ const ParkingMap: React.FC<ParkingMapProps> = ({ locations }) => {
           
           <p className="text-sm text-gray-300 flex items-center">
             <Zap className="w-4 h-4 mr-2 text-blue-400" />
-            Click on any quantum parking spot for neural network analysis and directions
+            Click on any smart parking spot for AI analysis and directions
           </p>
         </div>
 

@@ -43,7 +43,7 @@ export const conversationFlows: ConversationFlow[] = [
       },
       {
         id: 'parking_5',
-        message: "I can help you with that! Our quantum parking system offers flexible options - hourly, daily, or even monthly passes. What duration works best for your visit?",
+        message: "I can help you with that! Our smart parking system offers flexible options - hourly, daily, or even monthly passes. What duration works best for your visit?",
         suggestions: ['Just a few hours', 'Full day parking', 'Multiple days', 'Tell me about monthly passes']
       },
       {
@@ -340,3 +340,4 @@ export const getNextStep = (flowId: string, currentStepId: string, response?: st
 
   return undefined;
 };
+

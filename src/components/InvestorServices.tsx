@@ -64,6 +64,7 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
         notes: applicationNotes
       };
       setCurrentApplication(newApplication);
+      setSelectedService(null); // Close the service details pane immediately
       setShowDocumentUpload(true);
     }
   };
@@ -116,7 +117,6 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
       setTimeout(() => {
         alert(successMessage);
         setIsApplying(false);
-        setSelectedService(null);
         setCurrentApplication(null);
         setUploadedDocuments([]);
         setApplicationNotes('');
@@ -254,13 +254,13 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
     );
   }
 
-  if (showDocumentUpload && currentApplication) {
+  if (showDocumentUpload) {
     return (
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"
+        className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-[70] p-4"
         onClick={() => setShowDocumentUpload(false)}
       >
         <motion.div
@@ -282,7 +282,7 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
                   <h2 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                     Document Submission
                   </h2>
-                  <p className="text-gray-400">Upload required documents for {currentApplication.serviceName}</p>
+                  <p className="text-gray-400">Upload documents for your investment applications</p>
                 </div>
               </div>
               <button
@@ -325,10 +325,19 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
             <div className="bg-gray-800/50 rounded-xl p-4 border border-gray-700/50">
               <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
                 <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
-                Required Documents
+                Common Required Documents
               </h3>
               <div className="space-y-2">
-                {selectedService && (selectedService as any).requirements && (selectedService as any).requirements.map((requirement: string, index: number) => (
+                {[
+                  'Government-issued ID (Passport/Driver\'s License)',
+                  'Proof of Address (Utility Bill/Bank Statement)',
+                  'Financial Statements (Last 2 years)',
+                  'Tax Returns (Last 3 years)',
+                  'Bank Statements (Last 6 months)',
+                  'Business Registration Documents',
+                  'Investment Portfolio Summary',
+                  'Credit Report'
+                ].map((requirement, index) => (
                   <div key={index} className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                     <span className="text-gray-300">{requirement}</span>
@@ -446,7 +455,18 @@ const InvestorServices: React.FC<InvestorServicesProps> = ({ onClose }) => {
 
         {/* Category Filter */}
         <div className="p-6 border-b border-gray-700">
-          <h3 className="text-lg font-semibold text-white mb-4">Service Categories</h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-lg font-semibold text-white">Service Categories</h3>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setShowDocumentUpload(true)}
+              className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-xl font-medium hover:from-green-600 hover:to-blue-600 transition-all duration-300 shadow-lg shadow-green-500/25"
+            >
+              <Upload className="w-4 h-4" />
+              <span>Upload Documents</span>
+            </motion.button>
+          </div>
           <div className="flex flex-wrap gap-3">
             {categories.map((category) => (
               <motion.button

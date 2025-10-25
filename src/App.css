@@ -155,6 +155,63 @@ textarea:focus-visible {
     padding: 0.75rem;
     font-size: 0.875rem;
   }
+  
+  /* Mobile-specific improvements */
+  .mobile-optimized {
+    padding: 0.75rem;
+  }
+  
+  /* Ensure proper touch targets */
+  button, .clickable {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better text sizing for mobile */
+  .mobile-text {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* Optimize spacing for mobile */
+  .mobile-spacing {
+    margin: 0.5rem 0;
+  }
+  
+  /* Ensure proper scrolling on mobile */
+  .mobile-scroll {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .chat-bubble {
+    max-width: 240px;
+  }
+  
+  .suggestion-button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Even more compact spacing for very small screens */
+  .mobile-optimized {
+    padding: 0.5rem;
+  }
+}
+
+/* Large mobile devices and small tablets */
+@media (min-width: 641px) and (max-width: 768px) {
+  .chat-bubble {
+    max-width: 320px;
+  }
+  
+  .suggestion-button {
+    padding: 0.875rem;
+    font-size: 0.9rem;
+  }
 }
 
 /* High contrast mode support */
@@ -181,3 +238,4 @@ textarea:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+

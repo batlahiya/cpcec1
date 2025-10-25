@@ -105,7 +105,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
               </motion.div>
               <div>
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  Quantum Marketplace
+                  Smart Marketplace
                 </h2>
                 <p className="text-gray-300">Neural-powered shopping with AI recommendations</p>
               </div>
@@ -123,7 +123,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
               >
                 <div className="flex items-center space-x-2">
                   <Zap className="w-4 h-4" />
-                  <span>Quantum Mode</span>
+                  <span>Smart Mode</span>
                 </div>
               </motion.button>
               <button
@@ -219,7 +219,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
                           {getRatingStars(product.rating)}
                           <span className="text-xs text-gray-400">({product.rating})</span>
                         </div>
-                        <div className="text-purple-400 font-bold text-sm">${product.price}</div>
+                        <div className="text-purple-400 font-bold text-sm">LKR {product.price}</div>
                       </div>
                     </div>
                   </motion.div>
@@ -236,7 +236,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
               </h3>
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Filter className="w-4 h-4" />
-                <span>Quantum Filtered</span>
+                <span>Smart Filtered</span>
               </div>
             </div>
 
@@ -294,7 +294,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
                       {/* Quantum Badge */}
                       <div className="absolute bottom-3 left-3">
                         <div className="px-2 py-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-xs font-bold text-white">
-                          QUANTUM
+                          SMART
                         </div>
                       </div>
                     </div>
@@ -320,7 +320,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
 
                       <div className="flex items-center justify-between mb-4">
                         <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                          ${product.price}
+                          LKR {product.price}
                         </div>
                         <div className="text-sm text-gray-400">by {product.vendor}</div>
                       </div>
@@ -394,7 +394,7 @@ const QuantumMarketplace: React.FC<QuantumMarketplaceProps> = ({ onClose, onAddT
                           {getRatingStars(product.rating)}
                           <span className="text-sm text-gray-400">({product.rating})</span>
                         </div>
-                        <div className="text-purple-400 font-bold">${product.price}</div>
+                        <div className="text-purple-400 font-bold">LKR {product.price}</div>
                       </div>
                     </div>
                     <button

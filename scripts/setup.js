@@ -56,3 +56,4 @@ console.log('  npm run build - Build for production');
 console.log('  npm test      - Run tests\n');
 
 console.log('📚 For more information, check the README.md file');
+

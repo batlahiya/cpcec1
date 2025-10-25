@@ -65,9 +65,9 @@ const ShoppingCartModal: React.FC<ShoppingCartProps> = ({
               </div>
               <div>
                 <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  Quantum Shopping Cart
+                  Smart Shopping Cart
                 </h2>
-                <p className="text-gray-400 text-sm">{totalItems} items • ${totalPrice.toFixed(2)}</p>
+                <p className="text-gray-400 text-sm">{totalItems} items • LKR {totalPrice.toFixed(2)}</p>
               </div>
             </div>
             <button
@@ -121,7 +121,7 @@ const ShoppingCartModal: React.FC<ShoppingCartProps> = ({
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-xl font-bold text-white">${item.product.price}</div>
+                      <div className="text-xl font-bold text-white">LKR {item.product.price}</div>
                       <div className="text-gray-400 text-sm">per unit</div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ const ShoppingCartModal: React.FC<ShoppingCartProps> = ({
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="text-lg font-bold text-blue-400">
-                        ${(item.product.price * item.quantity).toFixed(2)}
+                        LKR {(item.product.price * item.quantity).toFixed(2)}
                       </div>
                       <button
                         onClick={() => onRemoveItem(item.product.id)}
@@ -167,7 +167,7 @@ const ShoppingCartModal: React.FC<ShoppingCartProps> = ({
             <div className="flex items-center justify-between mb-4">
               <span className="text-xl font-semibold text-white">Total:</span>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                ${totalPrice.toFixed(2)}
+                LKR {totalPrice.toFixed(2)}
               </span>
             </div>
             
@@ -181,12 +181,12 @@ const ShoppingCartModal: React.FC<ShoppingCartProps> = ({
               {isCheckingOut ? (
                 <>
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                  <span>Processing Quantum Payment...</span>
+                  <span>Processing Smart Payment...</span>
                 </>
               ) : (
                 <>
                   <CreditCard className="w-5 h-5" />
-                  <span>Proceed to Quantum Checkout</span>
+                  <span>Proceed to Smart Checkout</span>
                 </>
               )}
             </motion.button>
