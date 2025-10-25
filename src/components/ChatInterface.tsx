@@ -235,27 +235,27 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
   };
 
   const handleSuggestionClick = (suggestion: string) => {
-    if (suggestion === 'Parking') {
+    if (suggestion.includes('parking') || suggestion.includes('park') || suggestion.includes('spot')) {
       setShowParkingMap(true);
-      handleSendMessage('Show parking');
-    } else if (suggestion === 'Reservations') {
+      handleSendMessage(suggestion);
+    } else if (suggestion.includes('reservation') || suggestion.includes('book') || suggestion.includes('venue')) {
       setShowReservationBooking(true);
-      handleSendMessage('Show reservations');
-    } else if (suggestion === 'Shopping') {
+      handleSendMessage(suggestion);
+    } else if (suggestion.includes('shop') || suggestion.includes('shopping') || suggestion.includes('store')) {
       setShowShopQueries(true);
-      handleSendMessage('Show shopping');
-    } else if (suggestion === 'Investor Services') {
+      handleSendMessage(suggestion);
+    } else if (suggestion.includes('investor') || suggestion.includes('investment') || suggestion.includes('business')) {
       setShowInvestorServices(true);
-      handleSendMessage('Show investor services');
-    } else if (suggestion === 'Developer Services') {
+      handleSendMessage(suggestion);
+    } else if (suggestion.includes('developer') || suggestion.includes('tech') || suggestion.includes('help me with')) {
       setShowDeveloperServices(true);
-      handleSendMessage('Show developer services');
-    } else if (suggestion === 'Weather') {
+      handleSendMessage(suggestion);
+    } else if (suggestion.includes('weather') || suggestion.includes('forecast') || suggestion.includes('alerts')) {
       setShowWeatherInfo(true);
-      handleSendMessage('Show weather');
-    } else if (suggestion === 'Public Safety Overview') {
+      handleSendMessage(suggestion);
+    } else if (suggestion.includes('public') || suggestion.includes('safety') || suggestion.includes('surveillance') || suggestion.includes('overview')) {
       setShowPublicOverview(true);
-      handleSendMessage('Show public safety overview');
+      handleSendMessage(suggestion);
     } else {
       handleSendMessage(suggestion);
     }
@@ -546,7 +546,7 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ className = '' }) => {
               key={index}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => handleSendMessage(suggestion)}
+              onClick={() => handleSuggestionClick(suggestion)}
               className="px-2 sm:px-3 py-1.5 sm:py-2 bg-gray-700/50 hover:bg-gray-600/50 border border-gray-600/50 rounded-md sm:rounded-lg text-xs text-gray-200 hover:text-white transition-all duration-300 group"
             >
               <span className="group-hover:text-blue-300 transition-colors truncate">{suggestion}</span>

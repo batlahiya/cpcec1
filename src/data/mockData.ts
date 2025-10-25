@@ -386,22 +386,22 @@ export const investorServices: InvestorService[] = [
 ];
 
 export const weatherSuggestions = [
-  'What\'s the weather like today?',
-  'Will it rain this weekend?',
-  'Temperature forecast for next week',
-  'Best time to visit outdoor attractions',
-  'Weather alerts and warnings'
+  'Show me the weather dashboard',
+  'What\'s the weather forecast?',
+  'Check weather alerts for me',
+  'Open weather command center',
+  'I need weather information'
 ];
 
 export const smartSuggestions = [
-  'Check traffic conditions',
-  'Find nearby restaurants',
-  'Book a taxi or ride',
-  'Check public transport schedules',
-  'Find ATMs nearby',
-  'Emergency services contact',
-  'City events and activities',
-  'Port City news updates'
+  'Find me a parking spot',
+  'I want to make a reservation',
+  'Show me shopping options',
+  'I need investor services',
+  'Help me with developer services',
+  'Show me public safety overview',
+  'Where can I park my car?',
+  'I\'d like to book a venue'
 ];
 
 export interface Venue {
